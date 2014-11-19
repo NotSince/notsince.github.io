@@ -5,12 +5,13 @@
 
 <!--<style type="text/css" src="/src/css/style.css"></style>-->
 <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+<link rel="stylesheet" type="text/css" href="/src/css/crow.css">
 <link rel="stylesheet" type="text/css" href="/src/css/leaf/css/base.css"/>
 <body>
 
 	<!--<h1>Set your flair for <a href="http://www.reddit.com/r/pokemontrades/">/r/pokemontrades</a></h1>-->
 	
-	<div class="block"div>
+    <div class="block"></div>
 	
 	<form>
 
@@ -24,7 +25,9 @@
 				<option>&#945;S</option>
 				<option>&#937;R</option>
 			</select>
-			<img id="slidebutton" src="http://static.tumblr.com/mx1vyag/eiQn837q8/plus.png" alt="Plus" class="image plus">
+			<div id="slidebutton"class="circle bg-white">
+				<i class="icon icon-plus3 text-black"></i>
+			</div>
 		</div>
 
 		<div id="ignpile">
@@ -73,12 +76,13 @@
 			<input type="text" id="fc" placeholder="0000-0000-0000" class="input fc">
 			<img id="slidebutton2" src="http://static.tumblr.com/mx1vyag/eiQn837q8/plus.png" alt="Plus" class="image plus">
 		</div>
-
-		<div id="secondfriendcode" class="input">
-			<label for="fc2">Second Friend Code</label>
-			<input type="text" id="fc2" placeholder="0000-0000-0000" class="input fc">
-			<img width="10px">
-		</div>
+        <div id="fcpile">
+            <div id="secondfriendcode" class="input">
+                <label for="fc2">Second Friend Code</label>
+                <input type="text" id="fc2" placeholder="0000-0000-0000" class="input fc">
+                <img width="10px">
+            </div>
+        </div>
 
 	<br/>
 	<div id="button" onclick="flairsend()" class="button slide">Send</div>
@@ -108,7 +112,8 @@
 
 
 <div class="bottom block">Maintained by <a href="https://www.reddit.com/message/compose/?to=NotSinceYesterday">/u/NotSinceYesterday</a>.</div>
-
+        
+</body>
 <script type="text/javascript" src="http://static.tumblr.com/mx1vyag/Uc9n31rj4/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="/src/js/script.js">
 

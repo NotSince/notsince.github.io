@@ -6,35 +6,17 @@ $(function()
     /* e.g., take element with class .something and change some of its style attributes */
 	$ignpile_input = $("#ignpile"); 
 	$ignpile_input.hide();
-	$secondfc_input = $("#secondfriendcode"); 
-	$secondfc_input.hide();
+	$fcpile_input = $("#fcpile"); 
+	$fcpile_input.hide();
 	$notes = $("#notes"); 
 	$notes.hide();
 	$slidebutton = $("#slidebutton");
 	$slidebutton.click(function() { $ignpile_input.slideToggle();}); 
 	$slidebutton2 = $("#slidebutton2");
-	$slidebutton2.click(function() { $secondfc_input.slideToggle();}); 
+	$slidebutton2.click(function() { $fcpile_input.slideToggle();}); 
 	$notesbutton = $("#notesbutton");
 	$notesbutton.click(function() { $notes.slideToggle("slow");});
 
-	$('#team').on('change', function() {
-		var sel = this.value;
-		if (sel == 0) {
-			$('#flairpreview').css('display', 'none');
-		} else {
-			$('#flairpreview').css('display', 'inline-block');
-		}
-
-		if (sel == 1) {
-			$('#flairpreview').css('background-position', '-96px 0px');
-		} else if (sel == 2) {
-			$('#flairpreview').css('background-position', '-120px 0px');
-		} else if (sel == 3) {
-			$('#flairpreview').css('background-position', '-48px 0px');
-		} else if (sel == 4) {
-			$('#flairpreview').css('background-position', '-72px 0px');
-		}
-	});
 
 });
 
