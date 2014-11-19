@@ -1,25 +1,4 @@
 
-<<<<<<< HEAD
-body{
-	text-align: center;
-	/*background: #e5e5e5;*/
-	font-family:"verdana";
-	font-weight:bold;
-=======
-/*Colours:
-	Red: #FF0000
-		#CB0000
-		#9E0000
-		#FF2525
-		#FF5454
-		#FF9696
-	Blue: #0F3CAE
-		#0B2F88
-		#07236A
-		#2C56BD
-		#4F71C5
-		#8298CE
-*/
 body{
 	text-align: center;
 	background: #F8ECF0;
@@ -27,19 +6,16 @@ body{
 	font-family:"verdana";
 	font-weight:bold;
 	color: #0B2F88;
->>>>>>> origin/master
 	margin: 0px;
 	padding: 0px;
 }
 
-<<<<<<< HEAD
-=======
 h1{
 	font-family:"verdana";
 	font-size:20px;
 }
 
->>>>>>> origin/master
+
 li{
 	text-align: left;
 }
@@ -62,10 +38,7 @@ select{
 }
 
 .input{
-<<<<<<< HEAD
-=======
 	color: #2C56BD;
->>>>>>> origin/master
 	font-weight:bold;
 	margin-left: 0px;
 }
@@ -79,11 +52,7 @@ select{
 }
 
 .input.dropdown{
-<<<<<<< HEAD
 	width: 50px;!important
-=======
-	width: 50px;
->>>>>>> origin/master
 }
 
 
@@ -94,18 +63,6 @@ label {
 	font-size: 14px;	
 }
 
-<<<<<<< HEAD
-=======
-.button{
-	background: #2C56BD;  /*#3b3b3b;*/
-	color: white;
-	padding: 3px 0;
-	text-align: center;
-	width: 450px;
-	cursor: pointer;
-	font-size: 14px;
-}
->>>>>>> origin/master
 
 .button.slide{
 	margin-left: auto ;
