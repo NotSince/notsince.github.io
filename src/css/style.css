@@ -41,41 +41,55 @@ select{
 	color: #2C56BD;
 	font-weight:bold;
 	margin-left: 0px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .circle{
-    height: 20px !important;
-    width: 20px !important;
-    vertical-align: middle !important;
+    -webkit-flex: none;
+          flex: none;
+    height: 30px !important;
+    width: 30px !important;
+    margin: auto;
 }
 
 i{
+    -webkit-flex: none;
+          flex: none;
     height: 10px !important;
     width: 10px !important;
-    vertical-align: middle !important;
-    horizontal-align: middle !important; 
+    margin:auto; 
 }
 
 
 
 .input.fc{
-	width: 156px;
+	-webkit-flex: 2;
+          flex: 2;
 }
 
 .input.ign{
-	width: 100px;
+	-webkit-flex: 2;
+          flex: 2;
 }
 
 .input.dropdown{
-	width: 50px !important;
+	-webkit-flex: 1;
+          flex: 1;
 }
 
 
 label { 
     display: inline-block; 
-    width: 250px; 
+    -webkit-flex: initial;
+    flex: initial;
+    width: 200px;
+    min-width: 100px;
     text-align: left;
-	font-size: 14px;	
+	font-size: 14px;
+    margin: auto;
 }
 
 
@@ -119,11 +133,21 @@ a:active {
 
 
 .button:hover {
-  background: #1E88E5 !important;
+    background: #1E88E5 !important;
 }
 
 .flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.spacer {
+    -webkit-flex: none;
+          flex: none;
+    height: 30px !important;
+    width: 30px !important;
+    margin: auto;
 }

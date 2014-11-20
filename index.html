@@ -12,7 +12,7 @@
 <body>
     <div class="block"></div>
 	<form class="flex-container card bg-white">
-        <div class="card bg-white">
+        <div class="flex-container card bg-white">
             <div id="ign" class="input">
                 <label for="user">In Game Name</label>
                 <input type="text" id="user" placeholder="IGN" class="input ign">
@@ -39,7 +39,7 @@
                         <option>&#945;S</option>
                         <option>&#937;R</option>
                     </select>
-                    <img width="20px"></img>
+                    <div class="spacer"></div>
                 </div>
 
                 <div id="thirdign" class="input">
@@ -52,7 +52,7 @@
                         <option>&#945;S</option>
                         <option>&#937;R</option>
                     </select>
-                    <img width="20px">
+                    <div class="spacer"></div>
                 </div>
 
                 <div id="fourthign" class="input">
@@ -65,12 +65,12 @@
                         <option>&#945;S</option>
                         <option>&#937;R</option>
                     </select>
-                    <img width="20px">
+                    <div class="spacer"></div>
                 </div>
             </div>
         </div>
 	
-        <div class="card bg-white">
+        <div class="flex-container card bg-white">
             <div id="friendcode" class="input">
                 <label for="fc">Friend Code (Keep format)</label>
                 <input type="text" id="fc" placeholder="0000-0000-0000" class="input fc">
@@ -82,19 +82,16 @@
                 <div id="secondfriendcode" class="input">
                     <label for="fc2">Second Friend Code</label>
                     <input type="text" id="fc2" placeholder="0000-0000-0000" class="input fc">
-                    <img width="20px">
+                    <div class="spacer"></div>
                 </div>
             </div>
         </div>
 
-        <br/>
-        <br/>
-        <br/>
-        <div id="button" onclick="flairsend()" class="button slide">Send</div>
-        <br/>
+    </form>
+
+
+    <div id="button" onclick="flairsend()" class="button slide">Send</div>
 	
-	
-	</form>
 
     <p id="message"></p>
 
