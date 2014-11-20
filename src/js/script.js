@@ -38,7 +38,6 @@ function flairsend(){
 	type2 = document.getElementById("gametype2").value;
 	type3 = document.getElementById("gametype3").value;
 	type4 = document.getElementById("gametype4").value;
-	team = $('#team option:selected').text();
 	
 	if (fc.length != 14)
 		{
@@ -118,5 +117,5 @@ function flairsend(){
 	
 	document.getElementById("message").innerHTML=msg;
 	
-	window.open("http://www.reddit.com/message/compose/?to=Porygon2-Bot&subject="+team+"&message="+msg);
+	window.open("http://www.reddit.com/message/compose/?to=Porygon2-Bot&subject=Flair&message="+msg);
 }
