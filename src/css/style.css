@@ -55,15 +55,25 @@ select{
     margin: auto;
 }
 
-i{
+i.icon-plus3 {
     -webkit-flex: none;
           flex: none;
-    height: 10px !important;
-    width: 10px !important;
+    height: 20px !important;
+    width: 20px !important;
+    line-height: 20px !important;
+    font-size: 20px !important;
     margin:auto; 
 }
 
-
+i.icon-minus3 {
+    -webkit-flex: none;
+          flex: none;
+    height: 20px !important;
+    width: 20px !important;
+    line-height: 20px !important;
+    font-size: 20px !important;
+    margin:auto; 
+}
 
 .input.fc{
 	-webkit-flex: 2;

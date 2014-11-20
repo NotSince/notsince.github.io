@@ -11,9 +11,11 @@ $(function()
 	$notes = $("#notes"); 
 	$notes.hide();
 	$slidebutton = $("#slidebutton");
-	$slidebutton.click(function() { $ignpile_input.slideToggle();}); 
+    $buttonplus = $("#buttonplus");
+    $buttonplus2 = $("#buttonplus2");
+	$slidebutton.click(function() { $ignpile_input.slideToggle();  $buttonplus.toggleClass("icon-plus3");}); 
 	$slidebutton2 = $("#slidebutton2");
-	$slidebutton2.click(function() { $fcpile_input.slideToggle();}); 
+	$slidebutton2.click(function() { $fcpile_input.slideToggle();  $buttonplus2.toggleClass("icon-plus3");}); 
 	$notesbutton = $("#notesbutton");
 	$notesbutton.click(function() { $notes.slideToggle("slow");});
 
