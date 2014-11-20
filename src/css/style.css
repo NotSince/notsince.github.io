@@ -21,9 +21,8 @@ li{
 }
 
 #notes{
-	width:600px;
-	margin-left: auto ;
-	margin-right: auto ;
+	width:500px;
+	margin: auto;
 }
 
 form{
@@ -108,6 +107,20 @@ label {
 	margin-right: auto;
 }
 
+.button.slide.right{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    
+}
+
+.button.slide.left{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+}
+
+
 a:link {
 	color:#F8ECF0;
 }     /* unvisited link */
@@ -152,6 +165,24 @@ a:active {
     flex-flow: row wrap;
     justify-content: space-around;
     margin: auto;
+}
+
+.formsize {
+    width: 40%;
+    min-width: 600px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position:relative
+}
+
+.ignsize{
+    width: 40%;
+    min-width: 500px;
+}
+
+.fcsize{
+    width: 40%;
+    min-width: 500px;
 }
 
 .spacer {

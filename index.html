@@ -11,8 +11,8 @@
 
 <body>
     <div class="block"></div>
-	<form class="flex-container card bg-white">
-        <div class="flex-container card bg-white">
+	<form class="formsize flex-container card bg-white">
+        <div class="ignsize flex-container card bg-white">
             <div id="ign" class="input">
                 <label for="user">In Game Name</label>
                 <input type="text" id="user" placeholder="IGN" class="input ign">
@@ -70,7 +70,7 @@
             </div>
         </div>
 	
-        <div class="flex-container card bg-white">
+        <div class="fcsize flex-container card bg-white">
             <div id="friendcode" class="input">
                 <label for="fc">Friend Code (Keep format)</label>
                 <input type="text" id="fc" placeholder="0000-0000-0000" class="input fc">
@@ -87,30 +87,30 @@
             </div>
         </div>
 
+        <div id="button" onclick="flairsend()" class="button slide right">Send</div>
+        
+        <div id="notesbutton" class="button slide left">Additional Information</div>
+        <div id="notes">
+            <ul>
+                <li>The bot can take up to 2 minutes to update your flair</li>
+                <li>Your In Game Name must be 12 characters or less</li>
+                <li>You must keep the format of the Friend Code above</li>
+                <li>When you click 'send' a pre-formatted reddit message will open in a new tab</li>
+                <li>Send the message without editing it at all</li>
+            </ul>
+        </div>
     </form>
 
 
-    <div id="button" onclick="flairsend()" class="button slide">Send</div>
+    
 	
 
     <p id="message"></p>
 
-    <br/>
+    
+    
 
-
-    <br/>
-    <div id="notesbutton" class="button slide">Additional Information</div>
-    <div id="notes">
-        <ul>
-            <li>The bot can take up to 2 minutes to update your flair</li>
-            <li>Your In Game Name must be 12 characters or less</li>
-            <li>You must keep the format of the Friend Code above</li>
-            <li>When you click 'send' a pre-formatted reddit message will open in a new tab</li>
-            <li>Send the message without editing it at all</li>
-        </ul>
-    </div>
-
-    <br/>
+    
 
 
     <div class="bottom block">Maintained by <a href="https://www.reddit.com/message/compose/?to=NotSinceYesterday">/u/NotSinceYesterday</a>.</div>
