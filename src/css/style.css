@@ -116,19 +116,14 @@ a:active {
 	margin-right: 10px;
 }
 
-#flairpreview {
-	background: no-repeat url('http://b.thumbs.redditmedia.com/Uq3ZDuxxpFRZ5jdtJiGXeTZbDBPKtJlFVtxB3kb18mU.png');
-	background-position: -0px -0px;
-	content: "";
-	display: none;
-	margin-left: -29px;
-	width: 24px;
-	height: 24px;
-	vertical-align: middle;
-}
 
 
 .button:hover {
   background: #1E88E5 !important;
 }
 
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
