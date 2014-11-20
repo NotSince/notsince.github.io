@@ -70,31 +70,31 @@ function flairsend(){
 	    return;
 		}
 	
-	if (user == "IGN")
+	if (user == "")
 		{
-			window.alert("Your IGN is not IGN");
+			window.alert("Your IGN is not nothing");
 			return;
 		}
 
-	if (fc2 != "0000-0000-0000"){
+	if (fc2 != ""){
 		friendcode2 = ", " + fc2;
 	}
 
-	if (user2 != "IGN") {
+	if (user2 != "") {
 		ign2 = ", " + user2;
 		if (type2 != "-") {
 			ign2 = ign2 + " (" + type2 + ")"
 		}
 	}
 	
-	if (user3 != "IGN") {
+	if (user3 != "") {
 		ign3 = ", " + user3;
 		if (type3 != "-") {
 			ign3 = ign3 + " (" + type3 + ")"
 		}
 	}
 	
-	if (user4 != "IGN") {
+	if (user4 != "") {
 		ign4 = ", " + user4;
 		if (type4 != "-") {
 			ign4 = ign4 + " (" + type4 + ")"
