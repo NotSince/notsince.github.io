@@ -113,7 +113,7 @@ function flairsend(){
 	    return;
 		}
 
-	console.log(team + ',' + msg);
+	console.log(msg);
 	
 	document.getElementById("message").innerHTML=msg;
 	
