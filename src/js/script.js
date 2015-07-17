@@ -1,4 +1,6 @@
 
+var buttonPressed;
+
 $(function()
 {
     /* all your jquery code goes here */
@@ -18,7 +20,25 @@ $(function()
 	$slidebutton2.click(function() { $fcpile_input.slideToggle();  $buttonplus2.toggleClass("icon-plus3");}); 
 	$notesbutton = $("#notesbutton");
 	$notesbutton.click(function() { $notes.slideToggle("slow");});
-
+    
+    $bulbabutton = $("#bulbasaurball");
+	$bulbabutton.click(function () { 
+        buttonPressed = "Bulbasaur"
+        $("#starterpreview").css({"background-image": "url('bulbasaur.png')"}
+                                )});
+    
+    $squirtlebutton = $("#squirtleball");
+	$squirtlebutton.click(function () { 
+        buttonPressed = "Squirtle"
+        $("#starterpreview").css({"background-image": "url('squirtle.png')"}
+                                )});
+    
+    $charmbutton = $("#charmanderball");
+	$charmbutton.click(function () { 
+        buttonPressed = "Charmander"
+        $("#starterpreview").css({"background-image": "url('charmander.png')"}
+                                )});
+    
 
 });
 
@@ -39,6 +59,11 @@ function flairsend(){
 	type3 = document.getElementById("gametype3").value;
 	type4 = document.getElementById("gametype4").value;
 	
+     if(! buttonPressed){
+         window.alert("Click a Pokeball to choose your Starter");
+	    return;
+     }
+    
 	if (fc.length != 14)
 		{
 		window.alert("You totes messed up the Friend Code");
@@ -105,7 +130,9 @@ function flairsend(){
 		user = user + " (" + type + ")";
 	}
 		
-	msg = fc + friendcode2 + " || " + user + ign2 + ign3 + ign4
+	msg = fc + friendcode2 + " || " + user + ign2 + ign3 + ign4;
+    
+    title = buttonPressed;
 	
 	if (msg.length > 64)
 		{
@@ -114,8 +141,9 @@ function flairsend(){
 		}
 
 	console.log(msg);
+    console.log(buttonPressed);
 	
 	document.getElementById("message").innerHTML=msg;
 	
-	window.open("http://www.reddit.com/message/compose/?to=Porygon2-Bot&subject=Flair&message="+msg);
+	window.open("http://www.reddit.com/message/compose/?to=Porygon2-Bot&subject="+title+"&message="+msg);
 }
