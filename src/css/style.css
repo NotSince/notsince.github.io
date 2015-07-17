@@ -40,15 +40,19 @@ select{
 }
 
 .starterpreview{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 90px;
-    width:330px;
+    width:100px;
     margin: auto;
 }
 
 .ball{
     background-image: url("ball.png");
-    height:90px;
-    width:93px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:45px;
+    width:46px;
     margin:auto;
     display: inline-block;
 }
