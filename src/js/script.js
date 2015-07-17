@@ -58,9 +58,15 @@ function flairsend(){
 	type2 = document.getElementById("gametype2").value;
 	type3 = document.getElementById("gametype3").value;
 	type4 = document.getElementById("gametype4").value;
+    team = document.getElementById("teamselect").value;
 	
      if(! buttonPressed){
          window.alert("Click a Pokeball to choose your Starter");
+	    return;
+     }
+    
+    if (team == "-") {
+        window.alert("Choose a Side!" + team);
 	    return;
      }
     
@@ -132,7 +138,7 @@ function flairsend(){
 		
 	msg = fc + friendcode2 + " || " + user + ign2 + ign3 + ign4;
     
-    title = buttonPressed;
+    title = "Team " + team + " " + buttonPressed;
 	
 	if (msg.length > 64)
 		{

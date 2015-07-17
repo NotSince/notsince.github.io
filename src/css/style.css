@@ -218,6 +218,11 @@ a:active {
     min-width: 500px;
 }
 
+.teamsize{
+    width: 40%;
+    min-width: 500px;
+}
+
 .spacer {
     -webkit-flex: none;
           flex: none;
